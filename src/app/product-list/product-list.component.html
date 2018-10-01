@@ -1,0 +1,7 @@
+<h1>Products List</h1>
+
+<ul>
+  <li *ngFor="let product of products">
+    {{product.name}} <a [routerLink]="['/product/',product.id]">Go to details</a>
+  </li>
+</ul>
